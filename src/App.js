@@ -51,9 +51,15 @@ function App() {
         </div>
         
         <div style={{position:'absolute',display:'flex',flexDirection:'column',alignItems:'center',marginTop:-30,zIndex:950}}>
-          <div style={{display:'flex',zIndex:1000}}>
-            <div style={{width:15,height:15,border:'6px solid #969696',boxSizing:'border-box',borderRadius:50,marginRight:18}}/>
-            <div style={{width:15,height:15,border:'6px solid #969696',boxSizing:'border-box',borderRadius:50,marginLeft:18}}/>
+          <div style={{display:'flex',zIndex:1000,height:15,alignItems:'center'}}>
+            <div className='eye' 
+            style={{display:'flex',alignItems:'center',width:15,backgroundColor:'#969696',boxSizing:'border-box',borderRadius:50,marginRight:18,marginLeft:18}}>
+              <div className='pupil' style={{width:5,borderRadius:50,backgroundColor:'#fff',margin:2}}/>
+            </div>
+            <div className='eye' 
+            style={{display:'flex',alignItems:'center',width:15,backgroundColor:'#969696',boxSizing:'border-box',borderRadius:50,marginRight:18,marginLeft:18}}>
+              <div className='pupil' style={{width:5,borderRadius:50,backgroundColor:'#fff',margin:2}}/>
+            </div>
           </div>
           <div style={{display:'flex',marginTop:-10}}>
             <div style={{width:30,height:30,borderRadius:50,backgroundColor:'#FFD8D8'}}>
@@ -72,12 +78,12 @@ function App() {
           </div>
         </div>
 
-        <div style={{position:'absolute',zIndex:750,right:-30,top:100,transform:'rotate(10deg)'}}>
+        <div className='tail' style={{position:'absolute',zIndex:750,right:-30,top:100, }}>
           <div style={{borderRadius:50,width:70,height:50,backgroundColor:'#fff',}}/>
           <div style={{borderRadius:50,width:80,height:50,marginTop:-30,backgroundColor:'#fff',}}/>
           <div style={{borderRadius:50,width:70,height:50,marginTop:-30,backgroundColor:'#fff',}}/> 
         </div>
-        <div style={{position:'absolute',zIndex:700,right:-40,top:90,transform:'rotate(10deg)'}}>
+        <div className='tailBorder' style={{position:'absolute',zIndex:700,right:-40,top:90, }}>
           <div style={{borderRadius:50,width:70,height:50,backgroundColor:'#fff',border:'5px solid #dcdcdc',}}/>
           <div style={{borderRadius:50,width:80,height:50,marginTop:-30,backgroundColor:'#fff',border:'5px solid #dcdcdc',}}/>
           <div style={{borderRadius:50,width:70,height:50,marginTop:-30,backgroundColor:'#fff',border:'5px solid #dcdcdc',}}/> 
